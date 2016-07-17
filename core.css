@@ -1,0 +1,37 @@
+/**
+ * Reset the global box model for all HTML elements to include padding and
+ * border width in size units.
+ */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+/**
+ * Prevent horizontal overflow due to negative grid margins.
+ * Force vertical scrollbar for consistent page widths.
+ */
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+/**
+ * Set relative position on the body element for smoothscroll plugins.
+ * Allow components to expand the full height of the viewport.
+ */
+
+html,
+body {
+  position: relative;
+  height: 100%; }
+
+/**
+ * Prevent baseline white space from appearing below inline images.
+ * Reset dimensional formatting to make images responsive by default.
+ */
+
+img {
+  vertical-align: middle;
+  max-width: 100%; }
